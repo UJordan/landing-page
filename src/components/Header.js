@@ -1,6 +1,6 @@
 import { Navbar, Collapse, NavbarToggler, Nav, NavItem, Container, Row, Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faTwitter, faInstagram, faFacebook, faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons';
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    // const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <div>
@@ -36,32 +36,32 @@ const Header = () => {
                     </Nav>
                 </Collapse>
             </Navbar> */}
-            <Row>
+            <Row style={{backgroundColor:'#408E91'}}>
                 <Col>
-                    <ul className="list-unstyled d-flex text-center m-4 mt-5 align-items-center">
-                        <li className="me-3">ABOUT</li>
-                        <li className="me-3">PORTFOLIO</li>
-                        <li >CONTACT</li>
+                    <ul className="list-unstyled d-flex text-center m-2 pt-2 align-items-center">
+                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px"}}>ABOUT</li>
+                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px"}}>PORTFOLIO</li>
+                        <li className="hover-underline-animation" style={{fontSize:"25px"}}>CONTACT</li>
                     </ul>
                 </Col>
                 <Col>
-                    <div className="list-unstyled d-flex text-center m-4 justify-content-end">
-                        <div className='me-4 text-center'>
-                            <FontAwesomeIcon className="Icon" icon={faGithub} size="2x" />
+                    <div className="list-unstyled d-flex text-center m-2 pt-2 justify-content-end">
+                        <div className='me-4 text-center nav-icon'>
+                            <FontAwesomeIcon className="Icon" icon={faGithub} style={{fontSize:"20px"}} />
                             <p>GitHub</p>
                         </div>
-                        <div className='me-4 text-center'>
-                            <FontAwesomeIcon className="Icon" icon={faLinkedin} size="2x" />
+                        <div className='me-4 text-center nav-icon'>
+                            <FontAwesomeIcon className="Icon" icon={faLinkedin} style={{fontSize:"20px"}} />
                             <p>LinkedIn</p>
                         </div>
-                        <div className='me-4'>
-                            <i className='fa fa-file fa-2x' />
+                        <div className='me-4 nav-icon'>
+                            <i className='fa fa-file' style={{fontSize:"20px"}} />
                             <p>Resume</p>
                         </div>
                     </div>
                 </Col>
             </Row>
-            <div className='mt-1'></div>
+            <div className='pt-2' style={{backgroundColor:'#E49393'}}></div>
         </div>
     );
 }
