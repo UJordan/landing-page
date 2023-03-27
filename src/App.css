@@ -1,6 +1,26 @@
+@font-face {
+    font-family: vcrosdmono;
+    src: url('./fonts/VCR_OSD_MONO_1.001.ttf');
+}
+
+@font-face {
+    font-family: pixelcards;
+    src: url('./fonts/PixelCards.ttf');
+}
+
+@font-face {
+    font-family: pixelgrafiti;
+    src: url('./fonts/Pixel-Grafiti.ttf');
+}
+
 .hover-underline-animation {
+    font-family: vcrosdmono, sans-serif;
+}
+
+.hover-underline-animation:hover {
     display: inline-block;
     position: relative;
+    color: #E49393;
   }
   
   .hover-underline-animation::after {
@@ -21,6 +41,10 @@
     transform-origin: bottom left;
   }
 
+  .nav-icon {
+    font-family: vcrosdmono, sans-serif;
+  }
+
   .nav-icon:hover {
     color: #E49393;
   }
@@ -29,12 +53,14 @@
     color: #245953;
     text-align: center;
     font-size: 100px;
+    font-family: vcrosdmono, sans-serif;
   }
 
   .title {
     color: #245953;
     text-align: center;
     font-size: 60px;
+    font-family: pixelcards, sans-serif;
   }
 
   .terminal-header {
@@ -79,4 +105,12 @@
     border-radius: 0 0 4px 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
     /* font-family: Monaco,Consolas,Lucida Console,monospace; */
+  }
+
+  .portfolio {
+    color: #245953;
+    text-align: center;
+    font-size: 80px;
+    font-family: vcrosdmono, sans-serif;
+    margin-top: 30px;
   }

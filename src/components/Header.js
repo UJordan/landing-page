@@ -12,30 +12,6 @@ const Header = () => {
 
     return (
         <div>
-            {/* <Navbar navbarsticky='top' expand='sm'>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
-                <Collapse isOpen={menuOpen} navbar>
-                    <Nav className='mx-auto justify-content-between' navbar>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/info'>
-                                <li>ABOUT</li>
-                            </NavLink>
-
-                            <FontAwesomeIcon className="Icon" icon={faGithub} size="2x" />
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/reservation'>
-                                <li>PORTFOLIO</li>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/contact'>
-                                <li>CONTACT</li>
-                            </NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar> */}
             <Row style={{backgroundColor:'#408E91'}}>
                 <Col>
                     <ul className="list-unstyled d-flex text-center m-2 pt-2 align-items-center">
