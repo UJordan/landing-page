@@ -39,9 +39,9 @@ const Header = () => {
             <Row style={{backgroundColor:'#408E91'}}>
                 <Col>
                     <ul className="list-unstyled d-flex text-center m-2 pt-2 align-items-center">
-                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px"}}>ABOUT</li>
-                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px"}}>PORTFOLIO</li>
-                        <li className="hover-underline-animation" style={{fontSize:"25px"}}>CONTACT</li>
+                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px", fontWeight:'bold'}}>ABOUT</li>
+                        <li className="me-3 hover-underline-animation" style={{fontSize:"25px", fontWeight:'bold'}}>PORTFOLIO</li>
+                        <li className="hover-underline-animation" style={{fontSize:"25px", fontWeight:'bold'}}>CONTACT</li>
                     </ul>
                 </Col>
                 <Col>
