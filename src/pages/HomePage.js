@@ -18,12 +18,17 @@ const HomePage = () => {
                             <div className='button-green'></div>
                         </div>
                         <div className='terminal-body'>
-                            some text
+                            <div style={{marginLeft: 10, paddingTop: 10}}>
+                                <h4>About Me</h4>
+                                <p className='terminal-content'>I am a web developer who loves building fun websites and mobile applications.</p>
+                                <h4>Skills</h4>
+                                <p className='terminal-content'>HTML, CSS, JavaScript, REACT, Bootstrap/Reactstrap, REACT Router, REACT Native, Android Studio</p>
+                            </div>
                         </div>
                     </Col>
                 </Row>
         </Container>
-        <h1 className='portfolio'>Portfolio</h1>
+        <h1 className='portfolio'>Portfolio Projects</h1>
         <Container style={{ marginTop: 30}}>
             <Row>
                 <Col>
@@ -31,6 +36,7 @@ const HomePage = () => {
                 </Col>
             </Row>
         </Container>
+        <h1 className='portfolio'>Contact Me</h1>
         </>
     );
 };
