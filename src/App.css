@@ -13,14 +13,9 @@
     src: url('./fonts/Pixel-Grafiti.ttf');
 }
 
-
-@media (max-width: 700px) {
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    }
+.sticky-nav {
+    position: sticky;
+    top: 0;
   }
 
 h4, p {
@@ -58,14 +53,6 @@ transition: transform 0.25s ease-out;
 transform: scaleX(1);
 transform-origin: bottom left;
 }
-
-/* .nav-icon {
-font-family: vcrosdmono, sans-serif;
-}
-
-.nav-icon:hover {
-color: #E49393;
-} */
 
 .jordan {
 color: #245953;
