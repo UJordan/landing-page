@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 // import InfoPage from './pages/InfoPage';
 // import ReservationPage from './pages/ReservationPage';
 // import ContactPage from './pages/ContactPage';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -19,7 +19,7 @@ function App() {
         <Route path='RESERVATION' element={<ReservationPage />}/>
         <Route path='CONTACT' element={<ContactPage />}/> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

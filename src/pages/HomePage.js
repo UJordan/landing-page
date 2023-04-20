@@ -28,7 +28,7 @@ const HomePage = () => {
         <div style={{ marginTop: 30}}>
             <Cards />
         </div>
-        <Container>
+        <div style={{marginLeft:'1%', marginRight:'1%'}}>
             <h1 className='portfolio' id='Contact' style={{ marginBottom: 20}}>Contact Me</h1>
             <Form target="_blank" action="216aa10f74b0a03c9d0b4b8f85f041bc" method="POST">
                 <FormGroup>
@@ -46,7 +46,7 @@ const HomePage = () => {
                 </FormGroup>
                 <Button type="submit">Submit Form</Button>
             </Form>
-        </Container>
+        </div>
         </>
     );
 };

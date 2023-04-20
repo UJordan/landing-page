@@ -14,7 +14,7 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className="me-3 hover-underline-animation" style={{fontSize:"20px", fontWeight:'bold'}}>
-                            <Link to="Portfolio" spy={true} smooth={true} offset={-125} duration={500}>
+                            <Link to="Portfolio" spy={true} smooth={true} offset={-150} duration={500}>
                                 Porfolio
                             </Link>
                         </li>
