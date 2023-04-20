@@ -1,4 +1,4 @@
-import { Container, Col, Row, Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
 import Cards from '../components/Cards';
 
 const HomePage = () => {
@@ -28,7 +28,25 @@ const HomePage = () => {
         <div style={{ marginTop: 30}}>
             <Cards />
         </div>
-        <h1 className='portfolio' id='Contact'>Contact Me</h1>
+        <Container>
+            <h1 className='portfolio' id='Contact' style={{ marginBottom: 20}}>Contact Me</h1>
+            <Form target="_blank" action="216aa10f74b0a03c9d0b4b8f85f041bc" method="POST">
+                <FormGroup>
+                    <Row>
+                        <Col>
+                            <Input type="text" name="name" className="form-control" placeholder="Full Name" required/>
+                        </Col>
+                        <Col>
+                            <Input type="email" name="email" className="form-control" placeholder="Email Address" required/>
+                        </Col>
+                    </Row>
+                </FormGroup>
+                <FormGroup>
+                    <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
+                </FormGroup>
+                <Button type="submit">Submit Form</Button>
+            </Form>
+        </Container>
         </>
     );
 };
