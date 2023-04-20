@@ -30,7 +30,7 @@ const HomePage = () => {
         </div>
         <div style={{marginLeft:'1%', marginRight:'1%'}}>
             <h1 className='portfolio' id='Contact' style={{ marginBottom: 20}}>Contact Me</h1>
-            <Form target="_blank" action="216aa10f74b0a03c9d0b4b8f85f041bc" method="POST">
+            <Form target="_blank" action="https://formsubmit.co/jordanulves@gmail.com" method="POST">
                 <FormGroup>
                     <Row>
                         <Col>
