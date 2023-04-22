@@ -1,11 +1,11 @@
-import { faYoutube, faTwitter, faInstagram, faFacebook, faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
     return (
-        <div className="sticky-nav">
-            <div className='pt-3 pb-1' style={{backgroundColor:'#408E91'}}>
+        <header className="sticky-nav">
+            <nav className='pt-3 pb-1' style={{backgroundColor:'#408E91'}}>
                 <ul className="list-unstyled d-flex " style={{flexWrap:'wrap'}}>
                     <div className="mx-auto d-flex">
                         <li className="me-3 hover-underline-animation" style={{fontSize:"20px", fontWeight:'bold'}}>
@@ -43,9 +43,9 @@ const Header = () => {
                         </li>
                     </div>
                 </ul>
-            </div>
+            </nav>
             <div className='pt-2' style={{backgroundColor:'#E49393'}}></div>
-        </div>
+        </header>
     );
 }
 

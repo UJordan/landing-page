@@ -1,5 +1,6 @@
 import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
 import Cards from '../components/Cards';
+import ContactForm from '../components/ContactForm';
 
 const HomePage = () => {
 
@@ -24,29 +25,13 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-        <h1 className='portfolio' id='Portfolio'>Portfolio Projects</h1>
-        <div style={{ marginTop: 30}}>
-            <Cards />
-        </div>
-        <div style={{marginLeft:'1%', marginRight:'1%'}}>
-            <h1 className='portfolio' id='Contact' style={{ marginBottom: 20}}>Contact Me</h1>
-            <Form target="_blank" action="https://formsubmit.co/jordanulves@gmail.com" method="POST">
-                <FormGroup>
-                    <Row>
-                        <Col>
-                            <Input type="text" name="name" className="form-control" placeholder="Full Name" required/>
-                        </Col>
-                        <Col>
-                            <Input type="email" name="email" className="form-control" placeholder="Email Address" required/>
-                        </Col>
-                    </Row>
-                </FormGroup>
-                <FormGroup>
-                    <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
-                </FormGroup>
-                <Button type="submit">Submit Form</Button>
-            </Form>
-        </div>
+            <h1 className='portfolio' id='Portfolio'>Portfolio Projects</h1>
+            <section>
+                <Cards />
+            </section>
+            <section>
+                <ContactForm />
+            </section>
         </>
     );
 };

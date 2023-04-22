@@ -27,6 +27,48 @@ h4 {
     color: #408E91;
 }
 
+section {
+    margin-top: 30;
+}
+
+div > section {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+button {
+    background-color: rgba(108, 117, 125);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0062cc;
+  }
+
+footer {
+    margin-top: 3rem;
+}
+footer > div {
+    background-color: #E49393;
+    padding-bottom: 0;
+    padding-top: .5rem;
+}
+
+footer > section {
+    text-align: center;
+    background-color: #408E91;
+    padding-top: 1rem;
+}
+
+section > p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
 .hover-underline-animation {
     font-family: vcrosdmono, sans-serif;
 }
@@ -129,6 +171,24 @@ margin-top: 30px;
     height: 100%!important;
 }
 
-.form-control {
+/* Contact Form */
+form > div {
     font-family: vcrosdmono, sans-serif;
 }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
