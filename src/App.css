@@ -13,22 +13,12 @@
     src: url('./fonts/Pixel-Grafiti.ttf');
 }
 
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
 h4, p {
     font-family: vcrosdmono, sans-serif;
 }
 
 h4 {
     color: #408E91;
-}
-
-section {
-    margin-top: 30;
 }
 
 div > section {
@@ -41,7 +31,6 @@ button {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -68,6 +57,12 @@ section > p {
     margin-bottom: 0;
     padding-bottom: 1rem;
 }
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 
 .hover-underline-animation {
     font-family: vcrosdmono, sans-serif;

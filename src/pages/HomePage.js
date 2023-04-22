@@ -1,4 +1,3 @@
-import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
 import Cards from '../components/Cards';
 import ContactForm from '../components/ContactForm';
 
