@@ -13,6 +13,98 @@
     src: url('./fonts/Pixel-Grafiti.ttf');
 }
 
+/* Nav Styling */
+nav {
+    background-color: #408E91;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header > div {
+    padding-top: .5rem;
+    background-color: #E49393;
+}
+
+.nav-left {
+    padding-left: 2.5%;
+    justify-content: flex-start;
+}
+
+.nav-right {
+    padding-right: 2.5%;
+    justify-content: flex-end;
+    padding-left: 0px;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+.hover-underline-animation {
+    font-family: vcrosdmono, sans-serif;
+}
+
+.hover-underline-animation:hover {
+    display: inline-block;
+    position: relative;
+    color: #E49393;
+  }
+  
+.hover-underline-animation::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #E49393;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-right {
+        justify-content: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Nav Styling */
+
 h4, p {
     font-family: vcrosdmono, sans-serif;
 }
@@ -56,40 +148,6 @@ footer > section {
 section > p {
     margin-bottom: 0;
     padding-bottom: 1rem;
-}
-
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
-.hover-underline-animation {
-    font-family: vcrosdmono, sans-serif;
-}
-
-.hover-underline-animation:hover {
-    display: inline-block;
-    position: relative;
-    color: #E49393;
-  }
-  
-.hover-underline-animation::after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 2px;
-bottom: 0;
-left: 0;
-background-color: #E49393;
-transform-origin: bottom right;
-transition: transform 0.25s ease-out;
-}
-  
-.hover-underline-animation:hover::after {
-transform: scaleX(1);
-transform-origin: bottom left;
 }
 
 .jordan {
@@ -187,3 +245,4 @@ form > div {
     width: 100%;
     margin-bottom: 20px;
   }
+/* Contact Form */
