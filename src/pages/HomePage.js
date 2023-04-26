@@ -4,12 +4,10 @@ import ContactForm from '../components/ContactForm';
 const HomePage = () => {
 
     return (
-        <>
-            <div style={{ marginTop: 10, marginBottom: 10}}>
-                <h1 className='jordan'> Jordan Ulves</h1>
-                <p className='title'>Web and Software Developer</p>
-            </div>
-            <div style={{marginLeft: '1%', marginRight:'1%' }}>
+        <main>
+            <h1 className='jordan'> Jordan Ulves</h1>
+            <p className='title'>Web and Software Developer</p>
+            <section>
                 <div className='terminal-header'>
                     <div className='button-red'></div>
                     <div className='button-yellow'></div>
@@ -23,15 +21,14 @@ const HomePage = () => {
                         <p className='terminal-content'>HTML, CSS, JavaScript, REACT, Bootstrap, REACT Router, REACT Native, Android Studio.</p>
                     </div>
                 </div>
-            </div>
-            <h1 className='portfolio' id='Portfolio'>Portfolio Projects</h1>
+            </section>
             <section>
                 <Cards />
             </section>
             <section>
                 <ContactForm />
             </section>
-        </>
+        </main>
     );
 };
 

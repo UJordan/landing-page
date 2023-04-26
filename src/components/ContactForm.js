@@ -2,7 +2,7 @@ const ContactForm = () => {
     
     return (
         <div>
-            <h1 className="portfolio" id="Contact">Contact Me</h1>
+            <h1 className="sub-header" id="Contact">Contact Me</h1>
             <form target="_blank" action="https://formsubmit.co/jordanulves@gmail.com" method="POST">
                 <div className="form-row">
                     <input type="text" name="name" placeholder="Full Name" required></input>
