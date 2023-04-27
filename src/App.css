@@ -120,7 +120,7 @@ div > section {
 }
 
 button {
-    background-color: rgba(108, 117, 125);
+    background-color: #5c636a;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -128,7 +128,7 @@ button {
 }
 
 button:hover {
-    background-color: #0062cc;
+    background-color: #5c636a;
   }
 
 footer {
@@ -225,40 +225,9 @@ font-family: vcrosdmono, sans-serif;
 margin-top: 30px;
 }
 
-/* .card {
-    height: 100%!important;
-} */
-
-/* Cards */
 .card {
-    background: white;
-    padding: 1rem;
-    border: 1px solid #777;
-    border-radius: .25rem;
+    height: 100%!important;
 }
-
-.header {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.body {
-    font-size: .9rem;
-}
-
-.footer {
-    margin-top: 1rem;
-}
-
-.btn {
-    background: hsl(200, 50%, 50%);
-    color: white;
-    border: none;
-    padding: .5em, .75em;
-    border-radius: .25em;
-    cursor: pointer;
-}
-
 
 /* Contact Form */
 form > div {
